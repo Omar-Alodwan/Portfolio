@@ -1,0 +1,28 @@
+# Environment and config files
+.env
+config.js
+
+# Netlify (local dev)
+.netlify/
+
+# Node modules (if you install netlify-cli locally)
+node_modules/
+
+# Personal files - not needed in repo
+*.pdf
+*.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Lock files
+package-lock.json
+yarn.lock

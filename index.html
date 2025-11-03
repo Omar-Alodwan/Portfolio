@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omar Alodwan - Software Engineer portfolio showcasing web development projects, skills in JavaScript, React, Node.js, and more.">
+    <meta name="keywords" content="Software Engineer, Web Developer, JavaScript, React, Node.js, Portfolio">
+    <meta name="author" content="Omar Alodwan">
+    <meta property="og:title" content="Omar Alodwan - Software Engineer">
+    <meta property="og:description" content="Software Engineer specializing in modern web development">
+    <meta property="og:type" content="website">
+    <title>Omar Alodwan - Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="config.template.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#search" class="nav-link">AI Search</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero/About Section -->
+    <section id="about" class="section fade-in">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Omar Alodwan</span></h1>
+                <p class="hero-subtitle">Software Engineer | Berlin, Germany</p>
+                <p class="hero-description">
+                    Software Engineer with experience in developing scalable web and desktop applications using Java, PHP, and modern JavaScript frameworks. Strong focus on performance, usability, and clean, maintainable code. Collaborative and detail-oriented, with hands-on experience in Agile teams and a passion for digital transformation and innovative technologies that enhance participation and accessibility.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="EN-CV-Alodwan.pdf" download class="btn btn-secondary" id="resumeDownload">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Search Section -->
+    <section id="search" class="section fade-in search-section">
+        <div class="container">
+            <div class="search-content">
+                <h2 class="search-section-title">Ask Me Anything</h2>
+                <p class="search-description">
+                    Want to know more about my experience, skills, or background? 
+                    Ask me anything and I'll answer using information from my CV and professional experience.
+                </p>
+                <div class="search-wrapper-centered">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="e.g., What programming languages do you know?" class="search-input">
+                        <button id="searchBtn" class="search-btn">
+                            <span class="search-icon">🔍</span>
+                            <span>Search</span>
+                        </button>
+                    </div>
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item clickable-skill">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item clickable-skill">
+                    <div class="skill-header">
+                        <span class="skill-name">TypeScript</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item clickable-skill">
+                    <div class="skill-header">
+                        <span class="skill-name">React</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item clickable-skill">
+                    <div class="skill-header">
+                        <span class="skill-name">Node.js</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item clickable-skill">
+                    <div class="skill-header">
+                        <span class="skill-name">Express</span>
+                        <span class="skill-percentage">83%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="83"></div>
+                    </div>
+                </div>
+                <div class="skill-item clickable-skill">
+                    <div class="skill-header">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-percentage">82%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="82"></div>
+                    </div>
+                </div>
+                <div class="skill-item clickable-skill">
+                    <div class="skill-header">
+                        <span class="skill-name">PHP</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item clickable-skill">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item clickable-skill">
+                    <div class="skill-header">
+                        <span class="skill-name">Git/CI/CD</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Projects & Experience</h2>
+            <div class="projects-grid">
+                <div class="project-card clickable-project">
+                    <div class="project-image">
+                        <div class="project-placeholder">Universal Software Co</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Software Engineer - Universal Software Co</h3>
+                        <p class="project-description">
+                            Developed and maintained high-performance Java and JavaScript applications, contributing to scalable and reliable software solutions. Integrated modern front-end frameworks and refined back-end logic. Supported modernization of internal development processes using automation tools and CI/CD pipelines.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Agile</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-link">Famagusta, Cyprus</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card clickable-project">
+                    <div class="project-image">
+                        <div class="project-placeholder">NetCore IT</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Core Network Engineer - NetCore IT Solutions</h3>
+                        <p class="project-description">
+                            Participated in core network and software projects, focusing on data-driven tools and application reliability. Delivered a data analysis and desktop application project ahead of schedule. Collaborated in an Agile environment, contributing to sprint planning and iterative development cycles.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Network Infrastructure</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Agile/Scrum</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-link">Software Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card clickable-project">
+                    <div class="project-image">
+                        <div class="project-placeholder">AutoWeb Solutions</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PHP Web Development - AutoWeb Solutions</h3>
+                        <p class="project-description">
+                            Led the transition of an entire product catalog into a centralized PHP-based web system, streamlining data management and navigation. Integrated over 400 technology products into a cohesive platform with improved accessibility and load performance. Enhanced front-end interactivity using JavaScript.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Web Performance</span>
+                            <span class="tag">API Integration</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-link">400+ Products Integrated</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out via email.
+                </p>
+                <p style="text-align: center; color: var(--text-secondary); margin-top: 1rem;">
+                    <strong>Education:</strong> B.Sc. in Computer Engineering - Eastern Mediterranean University
+                </p>
+                <p style="text-align: center; color: var(--text-secondary); margin-top: 0.5rem;">
+                    <strong>Languages:</strong> German • English • Arabic
+                </p>
+                <div class="contact-info">
+                    <a href="mailto:omaralodwan1999@gmail.com" class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <span>omaralodwan1999@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/Omar-Alodwan" class="contact-item" target="_blank">
+                        <span class="contact-icon">🔗</span>
+                        <span>github.com/Omar-Alodwan</span>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Berlin, Germany</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Omar Alodwan. All rights reserved. Built with ❤️ and modern web technologies.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
